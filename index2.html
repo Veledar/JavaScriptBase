@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+/*
+    // задание 1
+    var a = 1, b = 1, c, d;
+        c = ++a; alert(c);           // 2 - сначала инкриментирование на 1, потом возвращает значение.
+        d = b++; alert(d);           // 1 - сначала возврат значения, потом инриментирование на 1.
+        c = (2+ ++a); alert(c);      // 5 - переменная a до этого примера инкриментирована на 1.
+        d = (2+ b++); alert(d);      // 4 - переменная a до этого примера инкриментирована на 1,
+                                     //     и в данном примере сложение происходит с цыфрой 2,
+                                     //     так же b принимает инкримент на 1 после примера.
+        alert(a);                    // 3 - инкриментирование было 2 раза по 1.
+        alert(b);                    // 3 - инкриментирование было 2 раза по 1.
+*/
+
+
+/*
+    // задание 2
+    var a = 2;
+    var x = 1 + (a *= 2);           // 5 - это тоже самое что и var x = 1 + (a = a * 2);
+*/
+
+
+/*
+    // задание 3
+    let a = +prompt('Введите числовое значение для - a'),
+        b = +prompt('Введите числовое значение для - b');
+    if (!parseInt(a) || !parseInt(b)) {
+        console.log('Введите числа');
+    }else if (a >= 0 && b >= 0){
+            console.log('a - b = ' + (a - b));
+            console.log('b - a = ' + (b - a));
+    }else if (a < 0 && b < 0){
+        console.log('a * b = ' + (a * b));
+    }else if (a >= 0 && b < 0 || a < 0 && b >= 0){
+        console.log('a + b = ' + (a + b));
+    }
+*/
+
+/*
+    // задание 4
+    function checkNumber() {
+        if (!a) {
+            a = prompt('Не оставляйте строку пустой\nВведите число от 0 до 15\nЕсли Вы желаете выйти из програппы нажмите q');
+            checkNumber(a);
+        } else if (a === 'q') {
+            console.log('Вы отменили выполнение программы');
+            return a;
+        } else if (a === '0'){
+            return a;
+        } else if (!parseInt(a)) {
+            a = prompt('Попробуйте вместо букв ввести цыфры от 0 до 15\nЕсли Вы желаете выйти из програппы нажмите q');
+            checkNumber (a);
+        }else if (a > 15) {
+            a = prompt('Вы ввели слишком большое число\nВведите число от 0 до 15\nЕсли Вы желаете выйти из програппы нажмите q');
+            checkNumber (a);
+        } else if (a < 0){
+            a = prompt('Вы ввели число с отрицательным значением\nВведите положительное число от 0 до 15\nЕсли Вы желаете выйти из програппы нажмите q');
+            checkNumber (a);
+        } else {
+            return a;
+        }
+    }
+    let a = prompt('Введите число от 0 до 15\nЕсли Вы желаете выйти из програппы нажмите q');
+    checkNumber (a);
+    a = +a;
+    switch (a) {
+        case 0:
+            console.log('0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
+            break;
+        case 1:
+            console.log('1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
+            break;
+        case 2:
+            console.log('2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
+            break;
+        case 3:
+            console.log('3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
+            break;
+        case 4:
+            console.log('4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
+            break;
+        case 5:
+            console.log('5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
+            break;
+        case 6:
+            console.log('6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
+            break;
+        case 7:
+            console.log('7, 8, 9, 10, 11, 12, 13, 14, 15');
+            break;
+        case 8:
+            console.log('8, 9, 10, 11, 12, 13, 14, 15');
+            break;
+        case 9:
+            console.log('9, 10, 11, 12, 13, 14, 15');
+            break;
+        case 10:
+            console.log('10, 11, 12, 13, 14, 15');
+            break;
+        case 11:
+            console.log('11, 12, 13, 14, 15');
+            break;
+        case 12:
+            console.log('12, 13, 14, 15');
+            break;
+        case 13:
+            console.log('13, 14, 15');
+            break;
+        case 14:
+            console.log('14, 15');
+            break;
+        case 15:
+            console.log('15');
+            break;
+    }
+*/
+
+/*
+    // задание 5
+    function checkNumber() {
+        if (!a || !b) {
+            return console.log('Одна или две строки пустые, операция не выполнена')
+        } else if (a === '0' || b === '0') {
+        } else if (!parseInt(a) || !parseInt(b)) {
+            return console.log('Вы ввели не число, операция не выполнена');
+        } else {
+        }
+    }
+    function checkOperat(a, b, operat) {
+        if (!a || !b) {
+        }  else if (operat === '+'){
+            return console.log((+a) + (+b));
+        } else if (operat === '/' && a === '0' || b === '0'){
+            return console.log('На 0 делить нельзя, обновите страницу и попробуйте еще раз');
+        } else if (operat === '/'){
+            return console.log((+a) / (+b));
+        }
+        else if (operat === '*'){
+            return console.log((+a) * (+b));
+        }
+        else if (operat === '-'){
+            return console.log((+a) - (+b));
+        }
+        else if (operat !== '+' || operat !== '-' || operat !== '*' || operat !== '/') {
+    return console.log('Вы ввели не арифметический знак операции, операция не выполнена, обновите страницу чтобы начать заново');
+        }
+        else return console.log('Обновите страницу и попробуйте еще раз')
+    }
+    let a = prompt('Калькулятор.\nВведите первое число'),
+        operat = prompt('Введите +, -, * или /'),
+        b = prompt('Введите второе число');
+    checkNumber (a, b);
+    checkOperat (a, b, operat);
+*/
+
+    //задание 6
+    function checkNumber() {
+        if (!arg1 || !arg2) {
+            return console.log('Одна или две строки пустые, операция не выполнена')
+        } else if (arg1 === '0' || arg2 === '0') {
+        } else if (!parseInt(arg1) || !parseInt(arg2)) {
+            return console.log('Вы ввели не число, операция не выполнена');
+        } else {
+        }
+    }
+    function mathOperation (arg1, arg2, operation) {
+        if (!arg1 || !arg2) {
+        }else if (operation === '/' && arg1 === '0' || arg2 === '0'){
+            return console.log('На 0 делить нельзя, обновите страницу и попробуйте еще раз');
+        } else if (operation === "сложение" || operation === "вычитание" || operation === "умножение" || operation === "деление") {
+            switch(operation){
+                case 'сложение':
+                    return console.log(arg1 + arg2);
+                    break;
+                case 'вычитание':
+                    return console.log(arg1 - arg2);
+                    break;
+                case 'деление':
+                    return console.log(arg1 / arg2);
+                    break;
+                case 'умножение':
+                    return console.log(arg1 * arg2);
+                    break;
+            }
+        } else return console.log('Вы написали не арифметический действие, операция не выполнена, обновите страницу чтобы начать заново');
+    }
+    let arg1 = prompt('Калькулятор.\nВведите первое число'),
+        operation = prompt('Напишите буквами какое арифметическое действие сделать: "сложение", "вычитание", "деление" или "умношение"'),
+        arg2 = prompt('Введите второе число');
+    checkNumber (arg1, arg2);
+    mathOperation (arg1, arg2, operation);
+
+</script>
+</body>
+</html>
