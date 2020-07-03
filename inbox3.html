@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Задания. Урок 3.</h2>
+    <button onclick="numberPrime()">Простые числа</button>
+    <button onclick="numbers()">Числа</button>
+    <button onclick="pyramid()">Пирамида</button>
+    <h3>Камень, ножницы, бумага</h3>
+    <button onclick="john = 1; gameRock()">Камень</button>
+    <button onclick="john = 2; gameRock()">Ножницы</button>
+    <button onclick="john = 3; gameRock()">Бумага</button>
+    <h3>Быки и коровы</h3>
+    <button onclick="bullsAndCows()">Быки и коровы</button>
+    <script>
+        function numberPrime (){
+            console.log('1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100.')
+            let number = 0,
+                arrNumber = [];
+            while (number <= 100) {
+                if (number >= 2){
+                    let i = 2,
+                        value = 2;
+                    while (number % i !== 0){
+                        i++;
+                        value++;
+                    }
+                    if (number === value){
+                        arrNumber.push(number);
+                    }
+                }
+                number++;
+            }
+            console.log(arrNumber);
+        }
+
+        function numbers () {
+            console.log('4. Вывести с помощью цикла for числа от 0 до 9, не используя тело цикла.');
+            for (let number = 0; number <= 9; console.log(number), number++){
+            }
+        }
+
+        function pyramid () {
+            console.log('5. Нарисовать пирамиду с помощью console.log, у вашей пирамиды должно быть 20 рядов');
+            let valueText = 'x',
+            i = 0;
+            do { console.log(valueText);
+                i++;
+                valueText += 'x';
+            } while (i < 20);
+        }
+
+        let john = 0;
+        function gameRock () {
+            console.log('6. Камень, ножницы, бумага');
+            let terminator = Math.floor(Math.random() * 3) + 1;
+            if ((john == 1 && terminator == 2) || (john == 2 && terminator == 3) || (john == 3 && terminator == 1)) {
+                console.log('Mankind won!');
+            } else if (john == terminator) {
+                console.log('Both won!');
+            } else {
+                console.log('Skynet won!');
+            }
+            console.log(`Кожаный мешок: ${john}, SkyNet: ${terminator}`);
+        }
+
+        function bullsAndCows() {
+
+        }
+
+    </script>
+</body>
+</html>
