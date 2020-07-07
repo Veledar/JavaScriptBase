@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Задания. Урок 4.</h2>
+    <button onclick="pyramid()">Пирамида равнобедренная</button>
+
+    <script>
+
+        function pyramid () {
+            let quantityLines = 20,
+                pyramidLine = ' ';
+            for (let vacuum = 1; vacuum < quantityLines/2; pyramidLine += '  ', vacuum++){}
+            console.log(pyramidLine += 'x');
+            for (let i = 1; i < quantityLines; i++){
+                for (let edit = 0; edit < 2; pyramidLine += 'x', edit++){}
+                console.log(pyramidLine.slice(i));
+            }
+        }
+
+    </script>
+</body>
+</html>
