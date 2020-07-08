@@ -6,14 +6,13 @@
 </head>
 <body>
     <h2>Задания. Урок 4.</h2>
-    <button onclick="pyramid()">Пирамида равнобедренная</button>
+    <button onclick="pyramid(20)">Пирамида равнобедренная</button>
     <br><br>
     <button onclick="numberInObject()">Преобразовать число в объект</button>
     <script>
 
-        function pyramid () {
-            let quantityLines = 20,
-                pyramidLine = ' ';
+        function pyramid (quantityLines) {
+                let pyramidLine = ' ';
             for (let vacuum = 1; vacuum < quantityLines/2; pyramidLine += '  ', vacuum++){}
             console.log(pyramidLine += 'x');
             for (let i = 1; i < quantityLines; i++){
@@ -23,9 +22,17 @@
         }
 
         function numberInObject() {
-            let number = prompt('Введите число 0 до 999')
-
+            let number = prompt('Введите число от 0 до 999'),
+                obj = new Object(number),
+                obj2 = new Object();
+            obj2.Сотни = obj['0'];
+            obj2.Десятки = obj['1'];
+            obj2.Еденицы = obj['2'];
+            console.log(obj2);
         }
+
+        // миллионера посмотреть как сделана быки и коровы
+
     </script>
 </body>
 </html>
