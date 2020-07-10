@@ -1,0 +1,240 @@
+.promo {
+  height: 66.5rem;
+  background-color: $colorBackground;
+  &__content {
+    height: 66.5rem;
+    background: url("img/topHeaderBack.png") no-repeat top right;
+    background-size: 61rem auto;
+    div {
+      height: 10.7rem;
+      width: 1.2rem;
+      background: $colorSite;
+      float: left;
+      margin-top: 27rem;
+    }
+    div:nth-child(2) {
+      display: block;
+      width: 485px;
+      height: 0;
+      background: $colorBackground;
+      font-size: 4rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding-left: 1rem;
+      margin-top: 27rem;
+    }
+    span {
+      color: $colorSite;
+    }
+    b {
+      letter-spacing: .15rem;
+      font-size: 6rem;
+      font-weight: 900;
+      line-height: 0.7em;
+    }
+  }
+}
+
+.offer-box {
+  display: flex;
+  flex-flow: column wrap;
+  height: 827px;
+  margin-top: 100px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.offer {
+  position: relative;
+  div{
+    padding: 10px;
+    position: absolute;
+    top: 25px;
+    background: #ffffff;
+    width: auto;
+    letter-spacing: 0.45px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    h2 {
+      font-size: 18px;
+      font-weight: 900;
+    }
+    p {
+      color: $colorSite;
+      font-size: 30px;
+      letter-spacing: 0.75px;
+      margin-bottom: 0;
+      font-weight: 900;
+    }
+  }
+}
+
+.product-box {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__head {
+    margin-top: 5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+  }
+  &__desc {
+    margin-bottom: 5rem;
+    text-align: center;
+    color: $colorIcon;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+  &__button {
+    padding: 0.2rem 2.4rem;
+    background: $colorSite;
+    border: none;
+    color: $colorTextWhite;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    line-height: 5.4rem;
+    letter-spacing: 0.4px;
+    &:focus {
+      outline: none;
+    }
+    img {
+      margin-left: 10px;
+    }
+  }
+}
+.product {
+  width: 26rem;
+  height: 37rem;
+  position: relative;
+  margin-bottom: 3rem;
+  text-align: center;
+  &__page {
+    background-color: $colorBackground;
+  }
+  &:hover {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+  }
+  &:hover .product__img {
+    filter: brightness(40%);
+  }
+  &:hover .product__add {
+    display: flex;
+    background: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    img {
+      margin-right: 1rem;
+    }
+  }
+  /*&__img {
+    width: 100%;
+  }*/
+  &__content {
+    padding: 1.9rem 1.5rem;
+    text-align: left;
+  }
+  &__name {
+    font-size: 1.3rem;
+    color: $colorText;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $colorSite;
+    text-transform: uppercase;
+    margin-top: 1.6rem;
+  }
+  &__add {
+    position: absolute;
+    top: 9.7rem;
+    left: 7rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 3.9rem;
+    width: 12.3rem;
+    border: 1px solid $colorTextWhite;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: $colorTextWhite;
+    &:hover {
+      box-shadow: 0px 0px 5px 0px $colorTextWhite;
+    }
+  }
+}
+
+.offerForWomen {
+  margin-top: 10rem;
+  display: flex;
+  height: 530px;
+  &Banner {
+    flex-shrink: 0;
+    height: inherit;
+    width: 76.7rem;
+    background: url(img/offerForWomen.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    .offerText {
+      position: absolute;
+      top: 14.6rem;
+      left: 4rem;
+      color: $colorTextWhite;
+      div:first-child {
+        font-size: 5.4rem;
+        font-weight: 700;
+        span {
+          color: $colorSite;
+        }
+      }
+      div:last-child {
+        font-size: 3.2rem;
+      }
+    }
+  }
+  &Details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $colorText;
+    color: $colorTextWhite;
+    .offerUnit {
+      padding: 30px 30px 30px 110px;
+      flex-grow: 1;
+      &:first-child {
+        background: url(img/offerDetails1.png) no-repeat 3.6rem 3rem;
+      }
+      &:nth-child(2) {
+        background: url(img/offerDetails2.png) no-repeat 3.6rem 3rem;
+      }
+      &:last-child {
+        background: url(img/offerDetails3.png) no-repeat 3.6rem 3rem;
+      }
+      .offerDetailsHead {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      .offerDetailsText {
+        line-height: 2.4rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+        text-align: justify;
+        font-size: 1.4rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}
