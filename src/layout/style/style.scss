@@ -1,0 +1,57 @@
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css';
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap";
+@import "defaults";
+@import "header";
+@import "main-page";
+@import "shopping-cart";
+@import "product";
+@import "checkout";
+@import "single-page";
+@import "footer";
+
+/*
+@media (min-width: 575.98px){
+  html {
+    font-size: 6px;
+  }
+  .center {
+    padding: 0 calc(50% - 270px);
+  }
+}
+
+@media (min-width: 767.98px){
+  html {
+    font-size: 9px;
+  }
+  .center {
+    padding: 0 calc(50% - 460px);
+  }
+}
+
+@media (min-width: 991.98px) {
+  html {
+    font-size: 9px;
+  }
+  .center {
+    padding: 0 calc(50% - 480px);
+  }
+}
+
+@media (min-width: 1199.98px){
+  html {
+    font-size: 11px;
+  }
+  .center {
+    padding: 0 calc(50% - 570px);
+  }
+}
+
+@media (min-width: 2559.98px){
+  html {
+    font-size: 16px;
+  }
+  .center {
+    padding: 0 calc(50% - 1024px);
+  }
+}
+*/
