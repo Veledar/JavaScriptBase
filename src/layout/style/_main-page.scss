@@ -3,7 +3,7 @@
   background-color: $colorBackground;
   &__content {
     height: 66.5rem;
-    background: url("img/topHeaderBack.png") no-repeat top right;
+    background: url("../../assets/img/topHeaderBack.png") no-repeat top right;
     background-size: 61rem auto;
     div {
       height: 10.7rem;
@@ -181,7 +181,7 @@
     flex-shrink: 0;
     height: inherit;
     width: 76.7rem;
-    background: url(img/offerForWomen.jpg) no-repeat;
+    background: url(../../assets/img/offerForWomen.jpg) no-repeat;
     background-size: cover;
     position: relative;
     .offerText {
@@ -211,13 +211,13 @@
       padding: 30px 30px 30px 110px;
       flex-grow: 1;
       &:first-child {
-        background: url(img/offerDetails1.png) no-repeat 3.6rem 3rem;
+        background: url(../../assets/img/offerDetails1.png) no-repeat 3.6rem 3rem;
       }
       &:nth-child(2) {
-        background: url(img/offerDetails2.png) no-repeat 3.6rem 3rem;
+        background: url(../../assets/img/offerDetails2.png) no-repeat 3.6rem 3rem;
       }
       &:last-child {
-        background: url(img/offerDetails3.png) no-repeat 3.6rem 3rem;
+        background: url(../../assets/img/offerDetails3.png) no-repeat 3.6rem 3rem;
       }
       .offerDetailsHead {
         font-size: 2rem;
